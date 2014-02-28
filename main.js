@@ -12,7 +12,15 @@ var complete = function() {
 };
 
 var crawler = new Crawler({
-    //Options place holder
+    "skipDuplicates":true,
+    "maxConnections":10,
+
+    //Each url found will use this callback
+    "callback":function(error,result,$) {
+        if(result) {
+        
+        }
+    }
 });
 
 var queueWrapper = function(url) {
