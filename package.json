@@ -1,0 +1,9 @@
+{
+    "name"   : "simpleEnergy-site-crawler",
+    "version": "0.0.1",
+    "author": "James Gibson",
+    "dependencies": {
+        "crawler-hq": "0.2.7"
+    },
+    "engine": "node 0.10.4"
+}
