@@ -18,7 +18,11 @@ var crawler = new Crawler({
     //Each url found will use this callback
     "callback":function(error,result,$) {
         if(result) {
-        
+            var html = result.body;
+            var matchedText = html.match(/457b4c66887cf81d30728f7ef3be6c49/);
+            if(matchedText && matchedText.length > 0) {
+                matchedUrls.push(result.uri);   
+            }
         }
 
         if($) {
