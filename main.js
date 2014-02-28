@@ -23,15 +23,21 @@ var crawler = new Crawler({
 
         if($) {
             $("a").each(function(index,a) {
-
+                if(a.href){
+                    queueWrapper(a.href);
+                }
             });
 
             $("link").each(function(index,l) {
-
+                if(l.href){
+                    queueWrapper(l.href);
+                }
             });
 
             $("script").each(function(index,s) {
-
+                if(s.src){
+                    queueWrapper(s.src);
+                }
             });
         }
     }
