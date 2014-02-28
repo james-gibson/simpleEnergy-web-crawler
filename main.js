@@ -20,6 +20,20 @@ var crawler = new Crawler({
         if(result) {
         
         }
+
+        if($) {
+            $("a").each(function(index,a) {
+
+            });
+
+            $("link").each(function(index,l) {
+
+            });
+
+            $("script").each(function(index,s) {
+
+            });
+        }
     }
 });
 
